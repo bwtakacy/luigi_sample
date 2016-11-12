@@ -3,7 +3,7 @@ import luigi.cmdline
 import luigi.postgres
 
 
-class HelloWorldTask(luigi.Task):
+class HelloWorldWithPGTargetTask(luigi.Task):
     task_namespace = 'examples'
     date = luigi.DateParameter()
     force = luigi.BoolParameter(significant=False, default=False)
